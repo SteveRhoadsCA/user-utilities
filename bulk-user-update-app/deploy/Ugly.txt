@@ -3,10 +3,10 @@
 <head>
     <title>Bulk User Update Utility</title>
     <!--  (c) 2016 CA Technologies.  All Rights Reserved. -->
-    <!--  Build Date: Mon Mar 06 2017 15:23:13 GMT-0700 (MST) -->
+    <!--  Build Date: Fri Jul 07 2017 14:10:38 GMT-0600 (MDT) -->
     
     <script type="text/javascript">
-        var APP_BUILD_DATE = "Mon Mar 06 2017 15:23:13 GMT-0700 (MST)";
+        var APP_BUILD_DATE = "Fri Jul 07 2017 14:10:38 GMT-0600 (MDT)";
         var CHECKSUM = [%= checksum %];
     </script>
     

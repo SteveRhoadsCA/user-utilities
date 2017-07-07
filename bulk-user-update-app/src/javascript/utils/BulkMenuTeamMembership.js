@@ -29,10 +29,10 @@ Ext.define('CA.technicalservices.userutilities.bulkmenu.TeamMembership', {
                 ineligibleUsers = 0;
 
             Ext.Array.each(this.records, function(r) {
-                var eligible = r.get('WorkspacePermission') !== "Workspace Admin"
-                    && r.get('WorkspacePermission') !== "Subscription Admin"
-                    && r.get('Disabled') === false;
-
+                // var eligible = r.get('WorkspacePermission') !== "Workspace Admin"
+                //     && r.get('WorkspacePermission') !== "Subscription Admin"
+                //     && r.get('Disabled') === false;
+                var eligible = r.get('Disabled') === false;
                 if (eligible) {
                     eligibleUsers.push(r);
                 } else {

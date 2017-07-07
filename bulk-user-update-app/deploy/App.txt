@@ -3,12 +3,12 @@
 <head>
     <title>Bulk User Update Utility</title>
     <!--  (c) 2016 CA Technologies.  All Rights Reserved. -->
-    <!--  Build Date: Mon Mar 06 2017 15:23:12 GMT-0700 (MST) -->
+    <!--  Build Date: Fri Jul 07 2017 14:10:37 GMT-0600 (MDT) -->
     
     <script type="text/javascript">
-        var APP_BUILD_DATE = "Mon Mar 06 2017 15:23:12 GMT-0700 (MST)";
-        var BUILDER = "kcorkan";
-        var CHECKSUM = 295921015242;
+        var APP_BUILD_DATE = "Fri Jul 07 2017 14:10:37 GMT-0600 (MDT)";
+        var BUILDER = "corkr03";
+        var CHECKSUM = 296249579706;
     </script>
     
     <script type="text/javascript" src="/apps/2.1/sdk.js"></script>
@@ -311,10 +311,10 @@ Ext.define('CA.technicalservices.userutilities.bulkmenu.TeamMembership', {
                 ineligibleUsers = 0;
 
             Ext.Array.each(this.records, function(r) {
-                var eligible = r.get('WorkspacePermission') !== "Workspace Admin"
-                    && r.get('WorkspacePermission') !== "Subscription Admin"
-                    && r.get('Disabled') === false;
-
+                // var eligible = r.get('WorkspacePermission') !== "Workspace Admin"
+                //     && r.get('WorkspacePermission') !== "Subscription Admin"
+                //     && r.get('Disabled') === false;
+                var eligible = r.get('Disabled') === false;
                 if (eligible) {
                     eligibleUsers.push(r);
                 } else {
@@ -400,6 +400,7 @@ Ext.define('CA.technicalservices.userutilities.bulkmenu.TeamMembership', {
         }
     }
 });
+
 Ext.define('CA.technicalservices.userutilities.recordmenu.ViewPermissions', {
     extend: 'Rally.ui.menu.item.RecordMenuItem',
     alias: 'widget.viewpermissionsrecordmenuitem',
